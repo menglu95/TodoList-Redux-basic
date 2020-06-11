@@ -10,6 +10,11 @@ const TodoList = ({ todos, toggleTodo }) => (
   </ul>
 );
 
+/**
+ * If you are unfamiliar about the propTypes,
+ * you learn about it from https://blog.bitsrc.io/understanding-react-proptypes-type-checking-in-react-9648a62ce12e
+ */
+
 TodoList.propTypes = {
   todos: PropTypes.arrayOf(
     PropTypes.shape({
