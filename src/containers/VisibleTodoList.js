@@ -1,3 +1,9 @@
+/**
+ *  reducers pure functions
+ *
+ *  A reducer for every part of the state
+ */
+
 import { connect } from "react-redux";
 import { toggleTodo } from "../actions";
 import TodoList from "../components/TodoList";
@@ -16,6 +22,10 @@ const getVisibleTodos = (todos, filter) => {
       throw new Error("Unknown filter: " + filter);
   }
 };
+
+/**
+ *
+ */
 
 const mapStateToProps = state => ({
   todos: getVisibleTodos(state.todos, state.visibilityFilter)
