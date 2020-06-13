@@ -1,5 +1,5 @@
 /**
- *  reducers pure functions
+ *  reducers are pure functions
  *
  *  A reducer for every part of the state
  */
